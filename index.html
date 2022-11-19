@@ -7,22 +7,23 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link rel="stylesheet" type="text/css" href=" css/style.css">
-    <title> Pure Life </title>
+    <title> Konnect-Quizes </title>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand fw-bold" style=color:#8F00FF href="#">Pure Life</a>
+          <a class="navbar-brand fw-bold" href="#"> <span class="text-primary">Konnect</span></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav d-flex ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#home">Home</a>
+                  </li>
+                 
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#features">Features</a>
+                <a class="nav-link" aria-current="page" href="#features">Interactive Quiz</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#contact">Contact</a>
@@ -34,48 +35,61 @@
       <section class="text-darks p-4 p-lg-0 pt-lg-5 text-center text-sm-start mb-5">
           <div class="container">
               <div class="d-sm-flex justify-content-between align-items-center">
-                  <div>
-                      <h1>Lorem ipsum dolor sit amet.</h1>
-                      <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                          A eius distinctio nemo consectetur ex aspernatur?
-                          ipsum dolor sit amet consectetur adipisicing elit. 
-                          A eius distinctio nemo consectetur ex aspernatur?
-                     </p>
-                  </div>
-                  <img class='img-fluid w-50 d-none d-sm-block' src="img/church-logo.jpeg" alt=" doctors doing research">
+                <div>
+                      <h1>Interactive Educational Game Templates</h1>
+                      <p class="lead"> These games are design to engage, motivate and encourage student learning.
+                        The templates are customizable to fit any subject or topic and can be seamlessly integrated
+                        in any class lesson. Review and assessment will never feel dull or repetitive again. 
+                    </p>
+                    <button type="button" class="btn btn-warning btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Buy Now
+                      </button>
+                    </div>
+                  <img class='img-fluid w-50 d-none d-sm-block' src="img/classroom.svg" alt="classroom games">
               </div>
+              <hr> 
           </div>
       </section>
       <section class="boxes" id="features">
-      <div class="container">
-        <div class="box bg-dark text-light">
+        
+      <div class="container">  
+             
+        <div class="box">
+            
           <!-- <h2><i class="bi bi-bag-heart-fill"></i> Bible College </h2> -->
-          <h2> Bible College </h2>
-          <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-             Omnis, esse hic explicabo incidunt veritatis deserunt!
-             eaque exercitationem?
-         </p>
-         </p>
+          <div class="card">
+            <img src="img/quiz.png" class="card-img-top" alt="classroom game for kids">
+            <div class="card-body bg-light text-dark">
+              <h5 class="card-title">Multiple-Choice</h5>
+              <p class="card-text">Create a quick review game for multi-player or knock out syle quiz game
+                with sound effects; for added excitement. </div>
+          </div>
+          
         </div>
-        <div class="box" style="background-color:#8F00FF;">
+        <div class="box">
           <!-- <h2><i class="bi bi-truck"></i> Singles Ministry</h2> -->
-          <h2> Singles Ministry</h2>
-          <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Provident ad aliquid amet dicta aperiam qui.eaque exercitationem?
-            </p>
-        </p>
-        </div>
-        <div class="box bg-dark text-light">
+          <div class="card">
+            <img src="img/connect4.png" class="card-img-top" alt="classroom game for kids">
+            <div class="card-body bg-light text-dark">
+              <h5 class="card-title">Multiple-Player</h5>
+              <p class="card-text">Divide the classroom into teams and full engage your students
+                with a classic strategy game with a twist. 
+              </p>
+            </div>
+          </div>
+          </div>
+        <div class="box text-light">
           <!-- <h2><i class="bi bi-heart-pulse-fill"></i>Junior Church</h2> -->
-          <h2>Junior Church</h2>
-          <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-              Praesentium nobis dolorum libero, veniam aperiam rerum autem 
-              eaque exercitationem?
-         </p>
-        </div>
+          <div class="card">
+            <img src="img/spelling.png" class="card-img-top" alt="classroom game for kids">
+            <div class="card-body bg-light text-dark">
+              <h5 class="card-title">Single-Player</h5>
+              <p class="card-text">A great game for reinforcing good spelling habits.
+                Make your "CVC" word list come to life with a simple to use interactive template.
+              </p>
+               </div>
+          </div>
+          </div>
       </div>
     </section>
     <hr class="m-5">
@@ -83,51 +97,60 @@
         <div class="container">
             <div class=" row justify-content-between align-items-center">
                 <div class='col-md'>
-                    <form name="medication form" action="POST" data-netlify="true" class="row g-3 mt-3">
+                    <h2> Get More Templates</h2>
+                    <hr>
+                    <form name="template-request" action="POST" data-netlify="true" class="row g-3 mt-3">
                             <div class="col-md-6">
-                                <label for="inputfullName" class="form-label">First Name</label>
-                                <input type="text`" class="form-control" placeholder='Enter First Name' name="First-name" required>
+                                <label for="inputfullName" class="form-label">Full Name</label>
+                                <input type="text`" class="form-control" placeholder='Enter Full Name' name="Full-name" required>
                             </div>
                             <div class="col-md-6">
-                                <label for="inputlastName" class="form-label">Last Name</label>
-                                <input type="text" class="form-control" placeholder='Enter Last Name' name="Last-name" required>
+                                <label for="inputlastName" class="form-label">School</label>
+                                <input type="text" class="form-control" placeholder="Enter School's Name" name="Last-name" required>
                             </div>
-                            <div class="col-12">
-                                <label for="inputAddress" class="form-label">Address</label>
-                                <input type="text" class="form-control" placeholder="Enter Address" name="Address" required>
-                            </div>
-                            <div class="col-12">
+                            <div class="col-md-6">
                                 <label for="inputAddress2" class="form-label">Telephone Contact</label>
                                 <input type="text" class="form-control" placeholder="Enter Telephone Number" name="Contact" required>
                             </div>
                             <div class="col-md-6">
                                 <label for="inputCity" class="form-label">Email Address</label>
-                                <input type="text" class="form-control" placeholder='Enter Island' name="email" required>
+                                <input type="text" class="form-control" placeholder='Enter Email' name="email" required>
                             </div>
-                            <div class="col-md-4 ms-auto">
-                                <label for="inputState" class="form-label">Home Church</label>
-                                <select id="inputState" class="form-select" name="Store-location" required>
-                                <option selected disabled>Choose</option>
-                                <option >Pure Life  Ministries</option>
-                                <option >Other Church Name Here</option>
-                                <option >Other Church Name Here</option>
-                                <option >Other Church Name Here</option>
-                                </select>
-                            </div>
-                            <div class="mb-3">
-                                <label for="formFile" class="form-label">Upload Family Photo</label>
-                                <input class="form-control" type="file" name="Proscription-file" required>
-                              </div>
-                            <div>
                                 <div data-netlify-recaptcha="true"></div>
-                            </div>
-                            <div class="col-12 mb-3">
-                                <button type="submit" class="btn" style="background-color:#8F00FF; color: white;">Submit</button>
+        
+                            <div class="col-md-6 mb-3">
+                                <button type="submit" class="btn btn-warning">Submit</button>
                             </div>
                     </form>
                 </div>
                 <div class="col-md p-5">
-                    <img class='img-fluid' src="img/church-logo.jpeg" alt=" Pharmacy with pills">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="img/spell.png" class="d-block w-100" alt="cvc word game">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/board.png" class="d-block w-100" alt="connect four education game board">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/con4.png" class="d-block w-100" alt="game question for connect four">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                
                 </div>
             </div>
 
@@ -137,10 +160,60 @@
             <p class="lead">Copyright &copy; 2022 Pure Life</p>
             <p>Created and maintain by Kat Custom Design</p>
             <a href="#" class="position-absolute bottom-0 end-0 p-5 mt-2">
-                <i class="bi bi-arrow-up-circle h1" style="color: #8F00FF;"></i>
+                <i class="text-primary bi bi-arrow-up-circle h1"></i>
             </a>
         </div>
     </footer>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Customer Form</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <small>One of our representative will contact you; by ordering online you will
+            be eligible for a 10% discount on your order.
+        </small>
+        <form name="buyer-form" action="POST" data-netlify="true" class="row g-3 mt-3">
+            <div class="col-md-12">
+                <label for="inputfullName" class="form-label">Full Name</label>
+                <input type="text`" class="form-control" placeholder='Enter Full Name' name="Full-name" required>
+            </div>
+            <div class="col-12">
+                <label for="inputAddress2" class="form-label">Telephone Contact</label>
+                <input type="text" class="form-control" placeholder="Enter Telephone Number" name="Contact" required>
+            </div>
+            <div class="col-md-12">
+                <label for="inputCity" class="form-label">Email Address</label>
+                <input type="text" class="form-control" placeholder='Enter Email' name="email" required>
+            </div>
+              <div class="col-md-12">
+                <label for="inputCity" class="form-label">Game Option</label>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Open this select menu</option>
+                    <option value="1">Multiple-Choice</option>
+                    <option value="2">Connect Four</option>
+                    <option value="3">CVC Spelling</option>
+                    <option value="4">Bundle</option>
+                  </select>
+                </div>
+                <div data-netlify-recaptcha="true"></div>
+
+            <div class="col-12 mb-3">
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-outline-primary">Submit</button>
+                  </div>
+                
+            </div>
+    </form>
+        
+      </div>
+     </div>
+  </div>
+</div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
